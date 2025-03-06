@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroFunc.com | AI-Powered Microservice Framework</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">MicroFunc</h1>
+            <p class="text-2xl mb-8">Modularize. Generate. Deploy.</p>
+            <div class="space-x-4">
+                <a href="#features" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100 transition">Features</a>
+                <a href="#github" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-16">
+        <section id="features" class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">🤖 AI Code Generation</h2>
+                <p>Automatically generate gRPC services, functions, and protocols using advanced AI.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">🧩 Modular Architecture</h2>
+                <p>Break down complex systems into manageable, reusable microservice components.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4">⚡ Rapid Deployment</h2>
+                <p>Streamline your development workflow with intelligent, automated deployment.</p>
+            </div>
+        </section>
+
+        <section class="mt-16 text-center">
+            <h2 class="text-3xl font-bold mb-8">How It Works</h2>
+            <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                <pre class="text-left bg-gray-100 p-4 rounded"><code>
+# Define your service in YAML
+services:
+  validator-service:
+    function:
+      source: "llm.generated_functions"
+      name: "data_validator.py"
+    grpc:
+      port: 50053
+
+# Run the CLI
+$ micro-func build
+                </code></pre>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Micro-Func. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-blue-400">GitHub</a>
+                <a href="#" class="hover:text-blue-400">Docs</a>
+                <a href="#" class="hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
